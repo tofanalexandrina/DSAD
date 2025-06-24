@@ -25,3 +25,16 @@ ab,19.376,150.427,21641529.3,773726.106,1718918.399
 ag,19.959,184.507,39377116.712,1585820.765,635601.084
 ...
 Criteriul de acordare a punctajului: vizualizarea fișierului output și a codului sursă
+
+B. În fișierul LocationQ.csv se găsesc indicatori de prezență a activității economice la nivel de județe între
+anii 2008 și 2021. Să se efectueze analiza de clusteri prin metoda Ward pe acest set de date (variabile sunt
+anii) și să se furnizeze următoarele rezultate:
+1. Matricea ierarhie cu informații privind joncțiunile făcute. Pentru fiecare joncțiune se va specifica clusterii
+intrați în joncțiune, distanța dintre cei doi clusteri și numărul de instanțe în clusterul nou format. Matricea va
+fi afișată la consolă. (1 punct)
+Criteriul de acordare a punctajului: vizualizarea outputului și a codului sursă
+2. Graficul dendrogramă pentru partiția optimală. (2 puncte)
+Criteriul de acordare a punctajului: vizualizarea graficului dendrogramă.
+3. Componența partiției optimale. Pentru fiecare instanță se determina clusterul de care aparține. Partiția se va
+salva în fișierul popt.csv. (2 puncte)
+Criteriul de acordare a punctajului: vizualizarea fișierului output și a codului sursă

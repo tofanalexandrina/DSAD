@@ -28,3 +28,12 @@ Continent,Librarie,CostLunarBasic,CostLunarStandard,CostLunarPremium,Internet,HD
 Europa,0.198,0.204,0.228,0.255,0.097,0.07,0.667,0.112,0.075
 ...
 Criteriul de acordare a punctajului: vizualizarea fișierului output și a codului sursă
+
+B. Să se efectueze analiza în componente principale standardizată pe setul de date de mai sus (variabilele
+observate sunt de la Librarie la  IndiceEducatie) și să se furnizeze următoarele rezultate:
+1. Varianțele componentelor principale. Varianțele vor fi afișate la consolă. (1 punct)
+Criteriul de acordare a punctajului: urmărirea outputului și a codului sursă
+2. Scorurile asociate instanțelor. Scorurile vor fi salvate în fișierul scoruri.csv. (2 puncte)
+Criteriul de acordare a punctajului: vizualizarea fișierului output și a codului sursă
+3. Graficul scorurilor în primele două axe principale. (2 puncte)
+Criteriul de acordare a punctajului: vizualizarea graficului

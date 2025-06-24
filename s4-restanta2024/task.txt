@@ -24,3 +24,18 @@ b,0.559,0.587,0.561,0.54,0.532,0.529,0.526,0.527,0.541,0.548,0.55,0.56,0.538,0.5
 if,0.298,0.308,0.291,0.322,0.335,0.36,0.364,0.221,0.438,0.448,0.461,0.482,0.478,0.499,0.379
 ...
 Criteriul de acordare a punctajului: vizualizarea fișierului output și a codului sursă
+
+B. Să se efectueze clasificarea pacienților aflați in blocul post-operator al unui spital. Variabila țintă este
+DECISION, cu valorile: I (pacientul a fost trimis la secția de îngrijire intensiva), S (pacientul a fost externat),
+A (pacientul a fost trimis la secția de îngrijire generală). Variabilele predictor sunt măsurători care se referă la
+aspecte legate de temperatură și presiunea sângelui (variabilele de la L_CORE la BP_ST). Variabila Id se referă
+la id-ul pacientului. Setul de învățare-testare este Pacienti.csv. Setul de aplicare este Pacienti_apply.csv.
+Cerințe:
+1. Să se aplice analiza liniară discriminantă și să se calculeze scorurile discriminante. Acestea vor fi salvate în
+fișierul z.csv. (1 punct)
+Criteriul de acordare a punctajului: vizualizarea fișierului output și codului sursă
+2. Să se traseze graficul scorurilor discriminante în primele două axe discriminante. (2 puncte)
+Criteriul de acordare a punctajului: vizualizarea graficului.
+3. Să se analizeze performanțele modelului calculând matricea de confuzie și indicatorii de acuratețe. Matricea
+de acuratețe va fi salvată în fișierul matc.csv, iar indicatorii de acuratețe vor fi afișați la consolă. (2 puncte)
+Criteriul de acordare a punctajului: vizualizarea fișierului output, a consolei și a codului sursă

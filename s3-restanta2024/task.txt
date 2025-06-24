@@ -22,3 +22,12 @@ Judet,01,02,03,05,06,07,..., 92,93,94,95,96,97,98,99
 ab,39.72,24.97,0.31,0.0,0.0,16.92,..., 2.07,5.38,0.0,1.5,6.24,0.0,0.0,0.0
 ...
 Criteriul de acordare a punctajului: vizualizarea fișierului output și a codului sursă
+
+B. Să se efectueze analiza factorială, fără rotație de factori, pe setul de date de mai sus (CAEN2_2021_NSAL)
+și să se furnizeze următoarele rezultate:
+1. Aplicarea testului KMO. Se vor calcula și se vor afișa la consolă indecșii KMO. (1 punct)
+Criteriul de acordare a punctajului: afișarea corectă a valorilor.
+2. Scorurile factoriale. Vor fi salvate în fișierul f.csv. (2 puncte)
+Criteriul de acordare a punctajului: vizualizarea fișierului output.
+3. Graficul scorurilor factoriale pentru primii doi factori. (2 puncte)
+Criteriul de acordare a punctajului: vizualizarea graficului.
