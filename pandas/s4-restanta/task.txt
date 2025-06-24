@@ -1,0 +1,26 @@
+În fișierul E_NSAL_2008-2021.csv se află informații referitoare la numărul de angajați la nivel de localitate în
+perioada 2008-2021. Anii sunt variabile. Variabila SIRUTA reprezintă codul Siruta al localității. De exemplu,
+variabila 2008 reprezintă numărul de angajați în anul 2008.
+În fișierul PopulatieLocalitati.csv avem informații despre localități: codul Siruta, denumirea, populația și
+indicativul de județ. Legătura dintre seturile de date se face prin codul Siruta.
+
+A. Cerințe
+1. Să se determine pentru fiecare localitate anul în care care au fost înregistrați cei mai mulți angajați.
+Rezultatele vor fi salvate în fișierul Cerinta1.csv. (2 puncte)
+Exemplu:
+SIRUTA,Anul
+1017,2017
+1071,2021
+1151,2008
+...
+Criteriul de acordare a punctajului: vizualizarea fișierului output și a codului sursă
+
+2. Să se determine rata ocupării populației pe fiecare an și cea medie (media ratei anilor) la nivel de județ.
+Rezultatele vor fi salvate în fișierul Cerinta2.csv în ordinea descrescătoare a ratei medii. Rata ocupării se
+calculează ca raport între numărul de angajați și populația județului. (2 puncte)
+Exemplu:
+Judet,2008,2009,2010,2011,2012,2013,2014,2015,2016,2017,2018,2019,2020,2021,RataMedie
+b,0.559,0.587,0.561,0.54,0.532,0.529,0.526,0.527,0.541,0.548,0.55,0.56,0.538,0.531,0.545
+if,0.298,0.308,0.291,0.322,0.335,0.36,0.364,0.221,0.438,0.448,0.461,0.482,0.478,0.499,0.379
+...
+Criteriul de acordare a punctajului: vizualizarea fișierului output și a codului sursă
