@@ -11,13 +11,12 @@ rezultat.to_csv("Cerinta1.csv", index=False)
 
 #2
 merged = pd.merge(df_ensal, df_populatie_loc, left_on="SIRUTA", right_on="Siruta")
-ani = [str(an) for an in range(2008, 2022)]
-ang_judet = merged.groupby("Judet")[ani].sum()
-pop_judet = merged.groupby("Judet")["Populatie"].sum()
-rata_ocupare = ang_judet.div(pop_judet, axis=0).round(3)
-rata_ocupare["RataMedie"] = rata_ocupare.mean(axis=1).round(3)
-rata_ocupare = rata_ocupare.sort_values(by="RataMedie", ascending=False)
-rata_ocupare=rata_ocupare.reset_index()
+pop=merged.groupby("Judet")["Populatie"].sum()
+nr_ang=merged.groupby("Judet")[coloane].sum()
+rata_ocupare=nr_ang.div(pop, axis=0)
+rata_ocupare["RataMedie"]=rata_ocupare.mean(axis=1)
+rata_ocupare=rata_ocupare.round(3).reset_index()
+rata_ocupare=rata_ocupare.sort_values(by="RataMedie", ascending=False)
 rata_ocupare.to_csv("Cerinta2.csv", index=False)
 
 #3
