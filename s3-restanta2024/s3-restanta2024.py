@@ -4,11 +4,13 @@ df_caen=pd.read_csv("CAEN2_2021_NSAL.csv")
 df_populatie=pd.read_csv("PopulatieLocalitati.csv")
 
 #1
-df_caen["Total"]= df_caen.iloc[:, 1:].sum(axis=1)
-coloane= df_caen.columns[1:-1]
-df_caen[coloane]=df_caen[coloane].div(df_caen["Total"], axis=0).round(2)
-df_caen=df_caen.drop(columns=["Total"])
-df_caen.to_csv("Cerinta1.csv", index=False)
+df_nou=df_caen.copy()
+coloane=df_nou.columns[1:]
+df_nou["Total"]=df_nou[coloane].sum(axis=1)
+df_nou[coloane]=df_nou[coloane].div(df_nou["Total"], axis=0)
+df_nou[coloane]=df_nou[coloane].round(2)
+df_nou=df_nou.drop(columns="Total")
+df_nou.to_csv("Cerinta1.csv", index=False)
 
 #2
 merged=pd.merge(df_caen, df_populatie, left_on="SIRUTA", right_on="Siruta")
