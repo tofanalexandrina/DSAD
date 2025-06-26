@@ -14,12 +14,11 @@ df_nou.to_csv("Cerinta1.csv", index=False)
 
 #2
 merged=pd.merge(df_caen, df_populatie, left_on="SIRUTA", right_on="Siruta")
-coloane= df_caen.columns[1:]
 pop=merged.groupby("Judet")["Populatie"].sum()
-nr_ang=merged.groupby("Judet")[coloane].sum()
-nr_ang= nr_ang.div(pop, axis=0) * 100000
-nr_ang=nr_ang.reset_index()
-nr_ang.to_csv("Cerinta2.csv", index=False)
+v=merged.groupby("Judet")[coloane].sum()
+v_100000=v.div(pop, axis=0)*10000
+v_100000=v_100000.round(2).reset_index()
+v_100000.to_csv("Cerinta2.csv", index=False)
 
 #3
 #--AF FARA ROTATIE
