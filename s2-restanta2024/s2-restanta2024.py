@@ -7,13 +7,10 @@ df_netflix=pd.read_csv("Netflix.csv")
 
 #1
 coloane=["Librarie", "CostLunarBasic", "CostLunarStandard", "CostLunarPremium", "Internet", "HDI", "Venit", "IndiceFericire", "IndiceEducatie"]
-standardizat=scaler.fit_transform(df_netflix[coloane])
-df_standardizat=pd.DataFrame(standardizat, columns=coloane)
-df_standardizat["Cod"]=df_netflix["Cod"]
-df_standardizat["Tara"]=df_netflix["Tara"]
-df_standardizat=df_standardizat[["Cod", "Tara"] + coloane]
-df_standardizat=df_standardizat.sort_values(by="Internet", ascending=False)
-df_standardizat.to_csv("Cerinta1.csv", index=False)
+df_nou=df_netflix.copy()
+df_nou[coloane]=scaler.fit_transform(df_nou[coloane])
+df_nou=df_nou.sort_values(by="Internet", ascending=False)
+df_nou.to_csv("Cerinta1.csv", index=False)
 
 #2
 merged=pd.merge(df_netflix, df_coduri, on="Cod")
